@@ -26,11 +26,6 @@ document.getElementById('signup-form').addEventListener('submit', function (e) {
       return;
     }
   
-    if (password.length < 6) {
-      errorMessage.textContent = 'Password must be at least 6 characters long.';
-      return;
-    }
-  
     
     alert('Form submitted successfully!');
     
