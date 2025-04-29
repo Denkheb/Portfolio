@@ -143,15 +143,17 @@ strong {
 }
 
 .project {
-    margin-left: 180px;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
-    display: flex;
     gap: 100px;
     padding: 60px;
-    margin-left: 160px;
 }
 
 .projects img {
+    
+    margin-left: auto;
+    margin-right: auto;
     width: 300px;
     border-radius: 2px;
     border: 4px solid black;
