@@ -146,8 +146,6 @@ strong {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    gap: 100px;
-    padding: 60px;
 }
 
 .projects img {
@@ -176,7 +174,8 @@ strong {
     border-radius: 4px;
     cursor: pointer;
     width: 180px;
-    margin: 0 auto;
+    margin: auto;
+    margin-bottom: 50px;
 }
 
 .projects button:hover {
@@ -221,6 +220,64 @@ form {
     flex-direction: column;
     display: flex;
     gap: 5px;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.name label {
+    color: rgba(255, 255, 255, 0.8);
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 2px;
+    padding-left: 10px;
+}
+
+.name input {
+    background: rgba(255, 255, 255, 0.2);
+    height: 45px;
+    line-height: 40px;
+    border-radius: 20px;
+    padding: 0px 20px;
+    border: none;
+    margin-bottom: 20px;
+    color: rgb(255, 244, 227);
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.email label {
+    color: rgba(255, 255, 255, 0.8);
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 2px;
+    padding-left: 10px;
+}
+
+.email input {
+    background: rgba(255, 255, 255, 0.2);
+    height: 45px;
+    line-height: 40px;
+    border-radius: 20px;
+    padding: 0px 20px;
+    border: none;
+    margin-bottom: 20px;
+    color: rgb(255, 244, 227);
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .message {
@@ -282,7 +339,7 @@ p {
 .copy {
     text-align: center;
     font-size: 20px;
-    color: white;
+    color: rgba(255, 255, 255, 0.555);
     margin-top: 20px;
 }
 
@@ -417,11 +474,28 @@ p {
         font-size: 16px;
     }
 
-    input, textarea {
-        width: 100%;
-        max-width: 100%;
-        margin-right: 0px;
+    /* Copyright responsive styling */
+    .copy {
+        font-size: 16px;
     }
+
+    /* Contact form responsive styling */
+    .name input, .email input {
+        width: 80%;
+        height: 50px;
+        font-size: 16px;
+    }
+
+    textarea {
+        width: 80%;
+        height: 120px;
+        font-size: 16px;
+    }
+
+    form {
+        padding: 20px;
+    }
+    
 }
 
 @media (max-width: 480px) {
@@ -473,6 +547,7 @@ p {
 
     .education h1 {
         font-size: 40px;
+        padding: 6px;
     }
 
     .education img {
@@ -481,5 +556,31 @@ p {
 
     .projects img {
         width: 200px;
+    }
+
+    /* Copyright responsive styling for smallest screens */
+    .copy {
+        font-size: 14px;
+    }
+
+    /* Contact form responsive styling for smallest screens */
+    .name input, .email input {
+        width: 90%;
+        height: 50px;
+        font-size: 15px;
+    }
+
+    textarea {
+        width: 90%;
+        height: 150px;
+        font-size: 15px;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    .name label, .email label, .message label {
+        font-size: 16px;
     }
 }
